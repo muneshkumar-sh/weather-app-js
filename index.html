@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="weather-card">
+
+        <!-- Search Section -->
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Enter city">
+            <button onclick="searchCity()">Search</button>
+        </div>
+
+        <div class="header">
+            <h2 id="city-name">NEW YORK</h2>
+            <span class="settings">⚙</span>
+        </div>
+
+
+        <div class="icon">
+            ☁🌙
+        </div>
+
+        <div class="temperature" id="temp">19°</div>
+
+        <div class="condition">
+            <span id="weather-condition">Cloudy</span>
+            <span id="min-max">19° / 10°</span>
+        </div>
+
+
+
+        <div class="forecast" id="forecast"></div>
+
+        <div class="dots">
+            <span></span>
+            <span class="active"></span>
+            <span></span>
+        </div>
+
+
+    </div>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>

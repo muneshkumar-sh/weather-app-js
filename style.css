@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #e5e5e5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center container */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Weather Card */
+.weather-card {
+    width: 100%;
+    max-width: 350px;
+    min-height: 530px;
+    background: #1f214a;
+    border-radius: 30px;
+    padding: 25px;
+    color: white;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.search-box input {
+    width: 70%;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.search-box button {
+    width: 25%;
+    border: none;
+    border-radius: 20px;
+    background: white;
+    cursor: pointer;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.settings {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.icon {
+    text-align: center;
+    font-size: 70px;
+    margin-top: 40px;
+}
+
+
+.temperature {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+.condition {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.condition span {
+    margin-left: 10px;
+}
+
+.forecast {
+    margin-top: 40px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+/* Dots */
+.dots {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    margin-left: -25px;
+}
+
+.dots span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: rgba(255,255,255,0.4);
+    border-radius: 50%;
+    margin: 0 4px;
+}
+
+.dots .active {
+    background: white;
+}
+
+/* Small Devices */
+@media (max-width: 400px) {
+    .weather-card {
+        border-radius: 0;
+        min-height: 90vh;
+    }
+}
+
+/* Large Screens */
+@media (min-width: 768px) {
+    .weather-card {
+        max-width: 400px;
+    }
+
+    .temperature {
+        font-size: 70px;
+    }
+
+    .icon {
+        font-size: 80px;
+    }
+}
